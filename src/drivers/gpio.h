@@ -18,7 +18,7 @@ typedef enum {
 
 void gpio_init_leds(void);
 
-FlagStatus gpio_read_bit(GPIO_TypeDef *gpiox, uint16_t pin);
+FlagStatus gpio_read_bit(const GPIO_TypeDef *gpiox, uint16_t pin);
 void gpio_write_bit(GPIO_TypeDef *gpiox, uint16_t pin, FlagStatus value);
 
 #endif // LED_HEADLIGHTS_GPIO_H
