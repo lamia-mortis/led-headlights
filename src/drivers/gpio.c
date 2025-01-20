@@ -17,7 +17,7 @@ void gpio_init_leds(void)
     GPIO_Init(GPIOE, &gpio);
 }
 
-FlagStatus gpio_read_bit(GPIO_TypeDef *gpiox, uint16_t pin)
+FlagStatus gpio_read_bit(const GPIO_TypeDef *gpiox, uint16_t pin)
 {
     if ((gpiox->IDR & pin) != (uint32_t)RESET) {
         return SET;

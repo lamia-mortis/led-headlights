@@ -46,3 +46,6 @@ The project consists of a **CAN transmitter* (hereinafter CAN TX), **CAN receive
         make flash TARGET_NAME=TX
         make flash TARGET_NAME=RX
     ```
+
+## Static Analysis
+- To perform code static analysis run `make check TARGET_NAME=<NAME>` command. It'll send an output with information about the code quality.
